@@ -1,21 +1,17 @@
 REM Author: Taishi Nojima
 REM Description: This script downloads ImageSnap, captures a photo from Facetime camera and saves it.
-DELAY 1000
-GUI SPACE
-DELAY 300
-STRING Terminal
+DEFAULT_DELAY 200
 DELAY 500
+COMMAND SPACE
+DELAY 500
+STRING Terminal
 ENTER
 DELAY 500
-STRING curl -L https://github.com/rharder/imagesnap/blob/master/imagesnap > /tmp/isnap
-DELAY 500
+STRING curl -L https://github.com/rharder/imagesnap/raw/master/imagesnap > /tmp/isnap
 ENTER
 DELAY 2000
 STRING chmod +x /tmp/isnap
-DELAY 500
 ENTER
 DELAY 500
 STRING /tmp/isnap hello.jpg
-DELAY 500
 ENTER
-DELAY 1000
