@@ -1,0 +1,6 @@
+REM Author: Taishi Nojima
+REM Description: Hello World!
+DELAY 100
+STRING Hello World
+ENTER
+
